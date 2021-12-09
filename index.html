@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <script
+      src="https://kit.fontawesome.com/3269f82d71.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;800&family=Cedarville+Cursive&family=Comforter&family=Homemade+Apple&family=Inconsolata:wght@300;400;700;800&family=Lato:ital,wght@0,700;0,900;1,300;1,400;1,700&family=League+Script&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,600;1,800&family=Permanent+Marker&family=Roboto+Condensed:ital@1&family=Roboto+Slab:wght@300&family=Style+Script&family=Yanone+Kaffeesatz:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        border: 0;
+        display: block;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background-color: #fff;
+      }
+      .container {
+        background-color: #ffffff;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        border-spacing: 0;
+        color: #4a4a4a;
+      }
+      .banner1 {
+        margin: 0 auto;
+      }
+      .banner2 {
+        margin: 0 auto;
+      }
+      .banner3 {
+        margin: 0 auto;
+      }
+      .shopping-section {
+        max-width: 600px;
+        width: 100%;
+      }
+      .shopping-links li {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+      .left ul {
+        width: 100%;
+        max-width: 260px;
+        float: left;
+      }
+      .right ul {
+        width: 100%;
+        max-width: 260px;
+        float: right;
+      }
+      .left li {
+        display: flex;
+        flex-direction: column;
+      }
+      .right li {
+        display: flex;
+        flex-direction: column;
+      }
+      .shopping-links a {
+        text-decoration: none;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        white-space: nowrap;
+      }
+      .community-section {
+        margin: 0 auto;
+        box-shadow: 0 4px 2px -2px #ff84ff;
+      }
+      #one {
+        background-color: #e5ccc9;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        filter: saturate(50%);
+      }
+      #two {
+        background-color: #ffefd5;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+      }
+      #three {
+        background-color: #ffe4e1;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+      }
+      #four {
+        background-color: #f0f8ff;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        filter: contrast(90%);
+      }
+      #five {
+        background-color: #e6e6fa;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        filter: saturate(0);
+      }
+      #six {
+        background-color: #e8ccd7;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        filter: saturate(5%);
+      }
+      #seven {
+        background-color: #fff0f5;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+      }
+      #eight {
+        background-color: #f4a460;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        filter: brightness(125%);
+      }
+      .two-col {
+        max-width: 300px;
+        width: 100%;
+        display: inline;
+        float: left;
+      }
+      .how-to-section {
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+      }
+      .how-to-section img {
+        width: 200px;
+      }
+
+      .discover-section {
+        margin: 0 auto;
+        background: #f6f1f6;
+        max-width: 600px;
+        width: 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .discover-section a {
+        text-decoration: none;
+        color: #000;
+        letter-spacing: 0.1rem;
+        line-height: 17px;
+        font-size: 12px;
+        color: #26262c;
+        margin-bottom: 10px;
+      }
+      .discover-section .arrow {
+        margin-right: 15px;
+      }
+      .arrow a {
+        font-size: 20px;
+        color: #5c5c5f;
+        float: right;
+        margin-top: -40px;
+      }
+      .cursive {
+        font-family: "Homemade Apple", cursive;
+        text-transform: capitalize;
+        font-weight: 300;
+        color: #26262c;
+        font-size: 24px;
+        letter-spacing: 0.2rem;
+        text-align: center;
+      }
+      .description {
+        padding-bottom: 20px;
+        padding-left: 30px;
+      }
+      .social {
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      #app {
+        display: flex;
+        justify-content: center;
+      }
+      #app img {
+        width: 100px;
+      }
+      .media img {
+        color: #ff84ff;
+        margin: 20px;
+        width: 30px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .footer-content {
+        margin: 0 auto;
+        display: flex;
+      }
+      .footer {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 30px 80px 30px 80px;
+      }
+      .footer a {
+        color: #4a4a4a;
+      }
+      .footer p {
+        font-size: 11px;
+        margin-bottom: 20px;
+        line-height: 17px;
+        color: #5c5c5f;
+        letter-spacing: 0.1rem;
+      }
+      #email {
+        color: rgb(63, 63, 165);
+      }
+      #small-text {
+        font-size: 11px;
+        line-height: 7px;
+      }
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .container {
+          width: 100%;
+          max-width: 350px;
+          margin: 0 auto;
+        }
+        .banner1 img {
+          max-width: 350px;
+          width: 100%;
+        }
+        .banner2 img {
+          max-width: 350px;
+          width: 100%;
+        }
+        .banner3 img {
+          max-width: 350px;
+          width: 100%;
+        }
+        .shopping-section {
+          max-width: 350px;
+          width: 100%;
+        }
+        .shopping-links li {
+          list-style: none;
+          margin-bottom: 0;
+        }
+        .shopping-links a {
+          font-size: 8px;
+          text-transform: uppercase;
+          padding: 10px;
+        }
+        .left ul {
+          width: 100%;
+          max-width: 125px;
+          float: left;
+        }
+        .right ul {
+          width: 100%;
+          max-width: 125px;
+          float: right;
+        }
+        .left li {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 5px;
+          justify-content: center;
+        }
+        .right li {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 5px;
+        }
+        .community-section img {
+          max-width: 350px;
+          width: 100%;
+        }
+        .two-col {
+          max-width: 175px;
+          width: 100%;
+          display: inline;
+        }
+        .how-to-section {
+          max-width: 350px;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .how-to-section img {
+          width: 150px;
+        }
+        .discover-section {
+          background-color: #fff;
+          max-width: 300px;
+          width: 100%;
+          white-space: nowrap;
+          display: flex;
+        }
+        .discover-section a {
+          font-size: 10px;
+        }
+        .discover-section .arrow {
+          display: none;
+        }
+        #small-text {
+          font-size: 8px;
+        }
+        .cursive {
+          font-size: 17px;
+          text-align: center;
+        }
+        .social {
+          max-width: 350px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .social-links {
+          margin: 0 auto;
+          display: inline-block;
+          padding-top: 10px;
+          padding-bottom: 20px;
+          justify-content: center;
+        }
+        #app {
+          display: flex;
+          justify-content: center;
+        }
+        .social-links a {
+          font-size: 15px;
+          margin: 5px;
+          padding: 20px;
+        }
+        .social-links img {
+          font-size: 50px;
+        }
+        .footer-content {
+          max-width: 400px;
+          width: 100%;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer p {
+          font-size: 10px;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        /*laptops and larger devices: */
+        .container {
+          width: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" width="100%">
+        <!--HEADER SECTION-->
+        <div class="banner1">
+          <a href="#">
+            <img id="image" src="img/header.jpg" alt="logo" />
+          </a>
+        </div>
+        <!--BANNER IMAGE-->
+        <div class="banner2">
+          <a href="#">
+            <img id="image" src="img/welcome-banner.jpg" alt="" />
+          </a>
+        </div>
+        <!--TITLE TEXT AND BUTTON-->
+        <div class="banner3">
+          <a href="#"
+            ><img
+              id="image"
+              src="img/flashing-gif.gif"
+              alt="Flashing fashion images"
+          /></a>
+        </div>
+        <!--TWO COLUMN SECTION-->
+        <div class="shopping-section">
+          <div class="shopping-links left">
+            <ul>
+              <li>
+                <a href="#" id="one">clothing</a>
+              </li>
+              <li>
+                <a href="#" id="two">furniture+de&#x301;cor</a>
+              </li>
+              <li>
+                <a href="#" id="three">shoes</a>
+              </li>
+              <li>
+                <a href="#" id="four">candles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="shopping-links right">
+            <ul>
+              <li>
+                <a href="#" id="five">accessories</a>
+              </li>
+              <li>
+                <a href="#" id="six">gifting</a>
+              </li>
+              <li>
+                <a href="#" id="seven">beauty + wellness</a>
+              </li>
+              <li>
+                <a href="#" id="eight">dresses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--COMMUNITY SECTION-->
+        <div class="community-section">
+          <a href="#">
+            <img src="img/community-link.jpg" alt="" />
+          </a>
+
+          <a href="#">
+            <img src="img/ambassador-link.jpg" alt="" />
+          </a>
+          <div class="two-col">
+            <a href="#">
+              <img src="img/stay-connected.jpg" alt="" />
+            </a>
+          </div>
+          <div class="two-col">
+            <a href="#">
+              <img src="img/stay-connected2.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!--TWO COLUMN SECTION-->
+        <div class="shopping-section">
+          <div class="shopping-links left">
+            <ul>
+              <li>
+                <a href="#" id="one">Sale</a>
+              </li>
+              <li>
+                <a href="#" id="two"> home & furniture</a>
+              </li>
+              <li>
+                <a href="#" id="three">shoes</a>
+              </li>
+              <li>
+                <a href="#" id="four">beauty</a>
+              </li>
+              <li>
+                <a href="#" id="five">plus sizes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="shopping-links right">
+            <ul>
+              <li>
+                <a href="#" id="five">new clothes</a>
+              </li>
+              <li>
+                <a href="#" id="six">dresses</a>
+              </li>
+              <li>
+                <a href="#" id="seven">accessories</a>
+              </li>
+              <li>
+                <a href="#" id="eight">gifts</a>
+              </li>
+              <li>
+                <a href="#" id="one">petite sizes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--HOW TO SECTION-->
+        <div class="how-to-section">
+          <a href="#">
+            <img src="img/curbside-icon.gif" alt="" />
+          </a>
+          <a href="#">
+            <img src="img/locator-icon.gif" alt="" />
+          </a>
+          <a href="#">
+            <img src="img/connected-icon.gif" alt="" />
+          </a>
+        </div>
+        <!--LEARN MORE-->
+        <div class="discover-section">
+          <p class="cursive" style="font-family: Homemade Apple" , cursive;>
+            <span> learn more </span>
+          </p>
+
+          <div class="description">
+            <a href="#">Try Afterpay</a>
+            <br />
+            <a id="small-text" href="#"
+              >Buy Now. Pay Later!
+              <br />
+              NOW AVAILABLE FOR IN-STORE PURCHASES!
+              <br />
+              (psst...it's always interest-free!)
+            </a>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+          </div>
+
+          <div class="description">
+            <a href="#">The Weekly Win</a>
+            <br />
+            <a id="small-text" href="#"
+              >Write a review. Win a $100 E-gift Card!
+              <br />
+              FIVE winners are chosen every week -
+              <br />
+              just visit your order history and write one (or more!) today.
+            </a>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+          </div>
+
+          <div class="description">
+            <a href="#">Gift & Styling Services</a>
+            <br />
+            <a id="small-text" href="#"
+              >Not sure where you begin? We can help:
+              <br />
+              Request your free consultation today!
+            </a>
+          </div>
+          <div class="arrow">
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <!--SOCIAL-->
+        <div class="social">
+          <div class="social-links media">
+            <a href="#">
+              <img src="img/fabook-logo.jpg" alt="" />
+            </a>
+          </div>
+          <div class="social-links media">
+            <a href="#">
+              <img src="img/twitter-logo.jpg" alt="" />
+            </a>
+          </div>
+          <div class="social-links media">
+            <a href="#">
+              <img src="img/pinterest-logo.jpg" alt="" />
+            </a>
+          </div>
+          <div class="social-links media">
+            <a href="#">
+              <img src="img/instagram-logo.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <a id="app" href="#">
+            <img src="img/appstore-icon.png" alt="" />
+          </a>
+        </div>
+        <!--FOOTER-->
+        <div class="footer-content">
+          <div class="footer">
+            <p>
+              This email contains an advertisement. You are subscribed as
+              <a id="email" href="#">dxxxxxxxxxxt@mail.com</a>
+              <br />
+              <a href="#"> Unsubscribe from our mailing list here.</a>
+            </p>
+            <p>
+              Anthropologie complies with the Can-Spam Act of 2003.
+              <br />
+              <a href="#">View our privacy policy here.</a>
+            </p>
+            <p>
+              Anthropologie
+              <br />
+              5000 South Broad St., Building 18
+              <br />
+              Philadelphia, PA 19112
+            </p>
+            <p><a href="#">View in a browser</a></p>
+            <p
+              style="text-align: center; display: block; flex-direction: column"
+            >
+              Free standard shipping on US, Canada, and Australia orders of $50
+              or more and free express shipping on Mexico orders of $50 or more
+              for a limited time. Free shipping reflected at checkout. Does not
+              apply to $149 Unlimited Furniture Delivery, duties, taxes, Curated
+              by Anthropologie, employee orders, and/or previously placed
+              orders. Additional fees apply for express or overnight shipping,
+              where available.
+            </p>
+            <p>© 2021 Anthropologie. All Rights Reserved.</p>
+          </div>
+        </div>
+        <!--END OF WRAPPER-->
+      </div>
+    </div>
+  </body>
+</html>
